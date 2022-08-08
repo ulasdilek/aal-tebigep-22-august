@@ -1,3 +1,6 @@
+from random import randint
+
+
 def swap(liste : list, index1 : int, index2 : int):
 	temp = liste[index1]
 	liste[index1] = liste[index2]
@@ -6,11 +9,15 @@ def swap(liste : list, index1 : int, index2 : int):
 def bubble_sort(liste : list):
 	print(liste)
 
-	for i in range(len(liste)): # sondan kacinci elemani yerlestiriyorum
-		for j in range(len(liste) - 1): # su an bastan kacinci elemani kontrol ediyorum
-			print ("j degeri:", j, "liste:", liste)
-			if (liste[j] > liste[j + 1]):
+	for i in range(len(liste) - 1): # sondan kacinci elemani yerlestiriyorum
+		noswap = True
+		for j in range(len(liste) - 1 - i): # su an bastan kacinci elemani kontrol ediyorum
+			# print ("j degeri:", j, "liste:", liste)
+			if liste[j] > liste[j + 1]:
 				swap(liste, j, j + 1) # eger buyuk olan eleman soldaysa yerlerini degistir
+				noswap = False
+		if noswap:
+			return
 
 	print(liste)
 
@@ -26,6 +33,8 @@ def selection_sort(liste : list):
 	
 	print(liste)
 
-numbers = [19, 53, 62, 26, 71, 87, 42, 93, 5, 11, 0, 6.28]
+numbers = []
+for i in range(1000000):
+	numbers.append(randint(1, 1000000))
 
-selection_sort(numbers)
+bubble_sort(numbers)
