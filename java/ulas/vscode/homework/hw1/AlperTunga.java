@@ -1,3 +1,4 @@
+package hw1;
 public class AlperTunga {
     public static void main(String[] args) {
         for (int sayi = 2; sayi <= 1000;sayi++) {

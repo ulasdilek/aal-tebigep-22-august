@@ -5,18 +5,26 @@ public class LoginProgram {
     public static void main (String[] args)
     {
 
+        Scanner scanner = new Scanner(System.in);
+        // prompt the user if you want to get input
         String username = "yiitDelikan";
         String password = "yiit2004";
-        Scanner scanner = new Scanner(System.in);
-        String inputUsername = scanner.nextLine();
-        String inputPassword = scanner.nextLine();
 
-        // sonraki ders .equals()
-        if (username == inputUsername && password == inputPassword) {
-            System.out.println("hosgeldin " + username);
-        }
-        else {
-            System.out.println("beni kandiramazsin");
+        int counter = 0;
+        boolean inLoop = true;
+        while (inLoop) {
+            System.out.print("input username: ");
+            String inputUsername = scanner.nextLine();
+            System.out.print("input password: ");
+            String inputPassword = scanner.nextLine();
+
+            if (username.equals(inputUsername) && password.equals(inputPassword)) {
+                inLoop = false;
+                System.out.println("hosgeldin " + username + ". " + counter + " adet hatali deneme yaptiniz.");
+            } else {
+                System.out.println("beni kandiramazsin");
+                ++counter;
+            }
         }
 
     }

@@ -1,3 +1,4 @@
+package hw1;
 public class HEren {
 
     public static void main (String[] args) {

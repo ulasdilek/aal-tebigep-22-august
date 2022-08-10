@@ -33,6 +33,13 @@ def selection_sort(liste : list):
 	
 	print(liste)
 
+def quick_sort(liste : list, pivot : int, low : int, high : int):
+
+
+	quick_sort(liste=liste, pivot=low, low=low, high=pivot - 1)
+	quick_sort(liste=liste, pivot=pivot+1, low=pivot+1, high=high)
+
+
 numbers = []
 for i in range(1000000):
 	numbers.append(randint(1, 1000000))

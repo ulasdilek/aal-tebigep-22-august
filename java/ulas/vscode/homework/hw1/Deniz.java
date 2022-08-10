@@ -1,3 +1,4 @@
+package hw1;
 
 public class Deniz {
 	public static void main (String[] args){

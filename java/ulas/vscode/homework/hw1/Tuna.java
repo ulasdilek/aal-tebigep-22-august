@@ -1,3 +1,4 @@
+package hw1;
 // https://www.reitix.com/merak/java-da-asal-sayilari-bulan-program/be15d670
 public class Tuna {
     public static void main(String[] args) {
