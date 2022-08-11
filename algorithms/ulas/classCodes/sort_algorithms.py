@@ -5,6 +5,12 @@ def swap(liste : list, index1 : int, index2 : int):
 	liste[index1] = liste[index2]
 	liste[index2] = temp
 
+def insert(liste : list, target : int, source : int):
+	temp = liste[source]
+	for i in range(source, target, -1):
+		liste[i] = liste[i - 1]
+	liste[target] = temp
+
 def merge(liste1 : list, liste2 : list):
 	index1 = 0
 	index2 = 0
@@ -68,8 +74,44 @@ def helper_merge_sort(liste : list, left : int, right : int):
 	# conquer
 	return merge(left_list, right_list)
 
-numbers = [5, 4, 6, 10, 2, 1, 17, 8, 3, 9, 15, 10, 2, 20, 16, 12]
+def quick_sort(liste : list):
+	helper_quick_sort(liste=liste, pivot=0, low=0, high=len(liste))
+
+def helper_quick_sort(liste : list, pivot : int, low : int, high : int):
+	# base case
+	if high - low <= 1: # length is at most 1
+		return
+
+	# general case
+	# partition
+	for i in range(low, high):
+		
+		if liste[i] < liste[pivot]:
+			pivot += 1
+			insert(liste=liste, target=low, source=i)
+			# print(liste)
+
+	# This reduces the complexity to O(N) for an already sorted sub-list
+	# But this reduces the optimisation for the general case
+	# *Optional* step provided by Mehmed Samed Sumer
+	sorted = True
+	for i in range(low, high - 1):
+		if liste[i] > liste[i+1]:
+			sorted = False
+			break
+
+	print(liste)
+
+	if sorted:
+		return
+
+	helper_quick_sort(liste=liste, pivot=low, low=low, high=pivot)
+	helper_quick_sort(liste=liste, pivot=pivot + 1, low=pivot + 1, high=high)
+
+numbers = [4, 2, 3, 1, 5 ,6, 7, 8]
 # for i in range(1000000):
 # 	numbers.append(randint(1, 1000000))
 
-merge_sort(numbers)
+print(numbers)
+quick_sort(numbers)
+print(numbers)
