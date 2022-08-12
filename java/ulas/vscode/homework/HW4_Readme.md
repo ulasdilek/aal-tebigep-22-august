@@ -12,6 +12,6 @@
 5-)En son aşamada bu arrayin bir kopyası oluşturalacak. Daha sonra kullanıcıdan 2 yeni index(GEÇERLİ İNDEXLER GİRİLDİĞİNDEN EMİN OLMAMIZI SAĞLAYALIM) ve yeni bir değer alınacak. Bu indexler arasında tüm elemanlar yeni verilen değer ile değiştirilecek ve array yeniden print edilecek.
 
 ## Source
-Ödevi başarılı ve daha rahat bir şekilde tamamlamak için linkteki dokümasyonu okuyup uygun fonksiyonları bulmanız ve uygun şekilde kullanmanız tavsiye edilir.
+Ödevi başarılı ve daha rahat bir şekilde tamamlamak için linkteki dokümasyonu okuyup uygun fonksiyonları bulmanız ve uygun şekilde kullanmanız tavsiye edilir. Aynı zamanda programlamada en önemli becerilerden biri olan dokümentasyon okumaya da yavaş yavaş başlamak için bu örnek ideal!
 
 > [Java Array Documentation](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Arrays.html)
