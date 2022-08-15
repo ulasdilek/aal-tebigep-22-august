@@ -5,6 +5,7 @@ public class OurArrays {
 
     public static void main (String[] args)
     {
+        /*
         // we can assign the elements inside the array in the declaration
         int[] intArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
         System.out.println(intArray[0]);
@@ -17,6 +18,14 @@ public class OurArrays {
             stringArray[i] = scanner.next();
         }
         System.out.println(Arrays.toString(stringArray));
+        */
+
+        String[] telefonDolabi = new String[35];
+        for (int i = 0; i < telefonDolabi.length; i++){
+            System.out.println("element " + i + " of telefonDolabi: " + telefonDolabi[i]);
+        }
+
+
     }
 
 }

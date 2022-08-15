@@ -6,6 +6,9 @@
 	],
 	"settings": {
 		"editor.fontSize": 20,
-		"terminal.integrated.fontSize": 20
+		"terminal.integrated.fontSize": 20,
+		"java.project.sourcePaths": [
+			"."
+		]
 	}
 }

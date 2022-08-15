@@ -1,7 +1,5 @@
-package hw1;
+package homework.hw1;
 public class Dersu {
-
-
     public static void main(String[] args) {
         System.out.println("1'den 100'e kadar olan asal sayılar 😊");
         System.out.println("1");
@@ -15,23 +13,23 @@ public class Dersu {
         {
             if (sayi % 2 == 0)
             {
-                int e = e + 1;
+                // int e = e + 1;
             }
         else if (sayi % 3 == 0)
             {
-                e = e + 1;
+                // e = e + 1;
             }
         else if (sayi % 5 == 0)
             {
-                e = e + 1;
+                // e = e + 1;
             }
         else if (sayi % 7 == 0)
             {
-                e = e + 1;
+                // e = e + 1;
             }
         else
             {
-                System.out.println(i);
+                System.out.println(sayi);
             }
         }
     }

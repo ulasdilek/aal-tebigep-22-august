@@ -1,4 +1,4 @@
-package hw1;
+package homework.hw1;
 public class YigitDelikan {
     public static void main(String[] args) {
         boolean isPrime;

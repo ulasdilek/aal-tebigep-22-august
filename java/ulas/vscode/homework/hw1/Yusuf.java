@@ -1,4 +1,4 @@
-package hw1;
+package homework.hw1;
 public class Yusuf {
     public static void main(String[] args) {
 
