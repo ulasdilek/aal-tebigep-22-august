@@ -1,4 +1,4 @@
-# Homework4- Array and java.util.Arrays
+# Array and java.util.Arrays
 
 ## Assignment:
 1-)Kullanıcı arrayin length'ini belirleyecek bir sayı girecek ve buna uygun bir array oluşturulacak. 
